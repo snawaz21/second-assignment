@@ -1,0 +1,92 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;;
+}
+main{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* copa america style */
+.copa-america{
+    background-color: #2D25A0;
+    height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.copa-headline{  
+    margin-bottom: 150px;
+    margin-left: 156px;
+}
+.section-title{
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.link-button{
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 24px;
+    transition: padding 5s;
+}
+.link-button:hover{
+    padding: 10px 30px;
+}
+.copa-thumbline img{
+    width: 556px;
+    height:438px;
+    margin-top: 153px;
+    margin-bottom: 86px;
+    margin-right:140px ;
+}
+
+/* player style */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+}
+.player{
+    width: 300px;
+    border: 10px solid white;
+    box-shadow: 10px 10px 20px gray;
+}
+.player-photo img{
+width: 300px;
+height: 256px;
+}
+
+/* Footer Style */
+.football-footer{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+
+}
+.football-footer img{
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+}
+.social-icons{
+    color: gray;   
+}
+/* Media Queries */
+/* Mobile device */
+@media only screen and (max-width:668px){
+    .container{
+        width: 100%;
+    }
+    .copa-america, .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .copa-headline, .copa-thumbline, .player{
+        flex-direction: column;
+    }
+}
